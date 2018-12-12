@@ -1,0 +1,17 @@
+.color {
+  color: red;
+  color: #d1915e;
+  color: rgb(209, 145, 94);
+  color: rgba(247, 244, 241, 0.46);
+  color: hsl(300, 100%, 100%);
+}
+
+.text {
+  letter-space: 0.05em;
+  background-image: linear-gradient(color1, color2);
+}
+
+.Подложка {
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}

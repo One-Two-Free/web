@@ -1,0 +1,48 @@
+.flex-container { /*это флекс контэйнер, его потомки первого уровня - флекс-элементы*/
+  display: flex;
+  
+  /*Направление главной оси */
+  flex-direction: row;  /*по умолчанию*/
+  flex-direction: column; /*колоны*/
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  /*Выравнивание вдоль главной оси*/
+  justify-content: flex-start; /*по умолчанию*/
+  justify-content: flex-end; 
+  justify-content: center; 
+  justify-content: space-between; /*одинаковое расстояние между элементами*/
+  justify-content: space-around; 
+
+  /*Выравнивание вдоль поперечной оси*/
+  /*по умолчанию stretch растянуть, растягивается на самый 
+  высокий элемент на текущей строке (на данном шампуре)*/
+  align-items: stretch;  
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
+
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  /*размре элемента*/
+  flex-basis: auto;
+  /* элемент может поглотить свободное пространство и увеличиться*/
+  flex-grow: 0;  /*по умолчанию*/
+
+  /*Если есть отрицательное пространство, то элемент может
+его поглотить и уменьшиться*/
+  flex-shrink: 1; /*по умолчанию*/
+
+  /*Работает во всех направлениях. «Съедает» свободное место. Если у нескольких элементов есть автоматические отступы, то свободное место делится поровну. Свободное место «съедается» до работы
+выравниваний — выравнивания «ломаются».*/
+  margin: auto;
+
+  /*Выравнивание вдоль поперечной оси*/
+  align-self: center;
+
+  /*Порядок элементов*/
+  order: 1;
+}
