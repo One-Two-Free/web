@@ -1,0 +1,78 @@
+/*
+
+Переменные
+  $fancy-color: tomato;
+  body {
+  background-color: tomato; 
+  }
+
+Вложенные селекторы
+  a {
+    color: tomato;
+    &:hover, &:focus {
+      color: plum;
+    }
+  }
+
+  button {
+    &::before {
+     content: '«';
+    }
+    &::after {
+      content: '»';
+    }
+  }
+
+  Примеси
+  @mixin clearfix{
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  .title {
+    color: tomato;
+    @include clearfix;
+  }
+
+  .title::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  
+*/
+
+@mixin list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin padding-mobile {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin padding-tablet {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin padding-desktop {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin border($bg-color: rgba(234, 255, 45, 0.2), $shadow-color: rgb(234, 255, 45) ) {
+  background-color: $bg-color;
+  box-shadow: inset 0 0 0 2px $shadow-color;
+}

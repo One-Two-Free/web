@@ -1,0 +1,25 @@
+/*Миксины (примеси)
+  Некоторые вещи в CSS весьма утомительно писать, особенно в CSS3, где плюс ко всему
+  зачастую требуется использовать большое количество вендорных префиксов. Миксины
+  позволяют создавать группы деклараций CSS, которые вам придется использовать по
+  нескольку раз на сайте. Хорошо использовать миксины для вендорных префиксов.
+  Пример для border-radius:
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+.box
+  +border-radius(10px)
+
+
+
+
+/*.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  }
