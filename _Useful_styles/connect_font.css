@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../font/subset-Cuprum-Regular.woff2') format('woff2'),
+        url('../font/subset-Cuprum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../font/subset-Cuprum-Bold.woff2') format('woff2'),
+        url('../font/subset-Cuprum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../font/subset-Cuprum-Italic.woff2') format('woff2'),
+        url('subset-Cuprum-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../font/subset-PTSans-Regular.woff2') format('woff2'),
+        url('../font/subset-PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../font/subset-PTSans-Bold.woff2') format('woff2'),
+        url('../font/subset-PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

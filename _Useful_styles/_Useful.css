@@ -1,0 +1,162 @@
+/*-----------SECTION Promo-Block-----------*/
+/*
+browser-sync start --server --files "php/*.php,css/*.css,js/*.js,html/*.html,*.*"
+*/
+
+/* Файл blocks/main-nav.scss */
+
+
+/* Позиционировани */
+/* Блочная модель */
+/* Типографика */
+/* Оформление */
+/* Анимация */
+/* Разное */
+
+/*------------------------------------------------------*/
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+.declaration-order {
+	/* Позиционировани */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+
+	/* Блочная модель */
+	display: block;
+	float: right;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+
+	/* Типографика */
+	font: normal 13px/1.5 "Arial", sans-serif;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 1.5;
+	font-family: "Arial", serif;
+	color: #333333;
+	text-transform: uppercase;
+	text-decoration: line-through;
+	text-align: center;
+
+	/* Оформление */
+	background-color: #f5f5f5;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	opacity: 1;
+
+	/* Анимация */
+	transition: color 1s;
+
+	/* Разное */
+	will-change: auto;
+}
+
+
+
+/*-------------------------------------------------*/
+ 
+.flex-container { /*это флекс контэйнер, его потомки первого уровня - флекс-элементы*/
+	display: flex;
+	
+	/*Направление главной оси */
+	flex-direction: row;  /*по умолчанию*/
+	flex-direction: column; 
+	flex-direction: row-reverse;
+	flex-direction: column-reverse;
+
+	/*Выравнивание вдоль главной оси*/
+	justify-content: flex-start; /*по умолчанию*/
+	justify-content: flex-end; 
+	justify-content: center; 
+	justify-content: space-between; 
+	justify-content: space-around; 
+
+	/*Выравнивание вдоль поперечной оси*/
+	align-items: stretch;  /*по умолчанию*/
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+	align-items: baseline;
+
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	/* элемент может поглотить
+свободное пространство и увеличиться*/
+	flex-grow: 0;  /*по умолчанию*/
+
+	/*Если есть отрицательное пространство, то элемент может
+его поглотить и уменьшиться*/
+	flex-shrink: 1; /*по умолчанию*/
+
+	/*Работает во всех направлениях. «Съедает» свободное место. Если у нескольких элементов есть автоматические отступы, то свободное место делится поровну. Свободное место «съедается» до работы
+выравниваний — выравнивания «ломаются».*/
+	margin: auto;
+
+	/*Выравнивание вдоль поперечной оси*/
+	align-self: center;
+
+	/*Порядок элементов*/
+	order: 1;
+}
+
+.background-color {
+	background-color: #f5f5f5;
+	background-image: url(../img/logo.svg);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	opacity: 1;
+}
+
+
+
+.border {
+    background-color: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+.promo-list .item1::after {
+    content: "";
+
+    position: absolute;
+
+    width: 44px;
+    height: 65px;
+
+    background-image: url();
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------Распорка для float-------------------*/
+.clearfix::after {
+	content: "";
+
+	display: table;
+	clear: both;
+}
+
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../font/subset-Cuprum-Regular.woff2') format('woff2'),
+        url('../font/subset-Cuprum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

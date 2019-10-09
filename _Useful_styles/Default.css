@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    /*преобладающие размеры для шрифта*/
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    /*фон*/
+    background-color: #000000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    /*ubrat podcherkivanie*/
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    border: 0;
+    padding:0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*-----------Обводка----------*/
+
+/*.border {
+    background-color: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}*/
+
+/*  --------Сеточные стили--------- */
+
+/* body {
+    background-image: url("../img/grid.jpg");
+    background-size: 2560px auto;
+    background-repeat: no-repeat;
+} */
+
+/* .inner-page {
+    background-image: url("../img/barbershop-shop.jpg");
+    background-size: 1200px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+} */

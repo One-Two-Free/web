@@ -1,0 +1,89 @@
+/*
+	в HTML прописываем 
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+*/
+
+/*Файл variables.scss переменные*/
+$bg-darkgrey: #292929;
+$bg-lightgrey: #f8f5f2;
+$tablet-width: 786px;
+$desktop-width: 1200px;
+
+/*Файл scaffolding.scss  глобальные стили*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    border: 0;
+    padding:0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	font-size: 18px;
+	line-height: 27px;
+	font-family: "Arial", sans-serif;
+	color: #f7f4f1;
+	font-style: normal;
+
+	background-color: $bg-darkgrey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.border {
+    background-color: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+/*Файл mixins.scss*/
+@mixin no-outline {
+	outline: none;
+	background-color: transparent;
+
+	&::before {
+		display: none;
+	}
+}
+
+/*Файл outlines.scss*/
+
+body {
+	background: $bg-darkgrey url("../img/bb-mobile.png") no-repeat 50% 0;
+	background-size: 320px auto;
+	min-height: 750px;
+}
+
+@media (min-width: $tablet-width) {
+	body {
+		background: $bg-darkgrey url("../img/bb-tablet.png") no-repeat 50% 0;
+		background-size: 768px auto;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	body {
+		background: $bg-darkgrey url("../img/bb-desktop.png") no-repeat 50% 0;
+		background-size: 1200px auto;
+	}
+}
+
+
+/*Файл blocks/page-header.scss*/
