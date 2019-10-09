@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <style>
+    #container-outer {
+      float:left;
+      overflow: hidden;
+      background: #eee;
+    }
+    #container-inner {
+      float:left;
+      background: #555;
+      position: relative;
+      right:75%;
+    }
+    #sidebar {
+      float: left;
+      width: 25%;
+      position: relative;
+      left: 75%;
+    }
+    #content {
+      float: left;
+      width: 75%;
+      position: relative;
+      left: 75%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container-outer">
+    <div id="container-inner">
+      <div id="sidebar">
+        <p>Боковая панель</p>
+      </div>
+      <div id="content">
+        <p>Основной контент</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

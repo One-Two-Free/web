@@ -1,0 +1,178 @@
+.red {
+    color:red;
+}
+
+.grey-line{
+    background-color: #f5f5f5;
+    padding: 8px 0;
+}
+
+.main-nav .nav>li>a {
+    padding: 15px 20px;
+}
+
+.main-nav .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.main-logo {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+.main-logo img {
+    height: 85px;
+}
+
+
+.main-logo h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.block-adv {
+    background-image: url('../images/evakuator-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+.block-adv h2 {
+    margin-bottom: 30px;
+}
+
+.block-adv ul {
+    margin: 50px 0;
+}
+
+.block-adv ul li {
+    margin: 2% 0;
+    font-size: 20px;
+}
+
+.block-adv ul li span {
+    color: red;
+}
+
+/* -------------------evacuator card----------------- */
+.evacuator-card {
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.evacuator-card img {
+    max-width: 100%;
+}
+
+.evacuator-card h2 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid red;
+}
+
+.evacuator-card .description {
+    padding: 30px;
+}
+
+.evacuator-card .description ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.evacuator-card .description li {
+    font-size: 0;
+}
+
+.evacuator-card .description li label {
+    display: inline-block;
+    width: 70%;
+    font-size: 16px;
+}
+
+.evacuator-card .description li span {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 16px;
+}
+/* -------------------map----------------------- */
+.map {
+    background-color: #f6f3f0;
+    margin: 40px 0;
+    padding: 30px 0;
+}
+
+/* -------------------econom------------------------ */
+
+.economim {
+    margin: 40px 0 ;
+    padding: 30px 0;
+}
+
+.econom-logo {
+    font-size: 48px;
+}
+
+.econom-cart {
+    margin: 20px 0;
+}
+
+/* -------------------zakaz----------------------- */
+.zakaz {
+    background-color: #f6f3f0;
+    margin: 40px 0;
+    padding: 30px 0;
+}
+
+/* -------------------footer----------------------- */
+.site-footer {
+    background-color: #f5f5f5;
+    padding: 50px 0px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-contact ul li {
+    font-size: 0;
+}
+
+.footer-contact ul label {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+}  
+.footer-contact ul a {
+    display: inline-block;
+    width: 70%;
+    font-size: 16px;
+}  

@@ -1,0 +1,155 @@
+.section { 
+}
+
+
+.section__container {
+  width: 470px;
+  height: 397px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  overflow: hidden;
+
+  background-color: white;
+  background-image: url(../img/woman-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 173px 397px;
+  border-radius: 0 0 5% 5%;
+}
+
+.section__title {
+  margin-left: 194px;
+  margin-top: 84px;
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 70px;
+}
+
+.section__action {
+  display: block;
+  position: relative;
+  margin: 0 auto;  
+  padding: 0;
+  padding-left: 65px;
+  width: 420px;
+  height: 130px;
+  box-sizing: border-box;
+  border: 4px solid white;
+  border-radius: 10px;
+  background: #DF0034;
+  background: linear-gradient(to top, #DF0034, #FF7900);
+
+  text-align: left;
+  
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 44px;
+  color: white;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 67px;
+    width: 38px;
+    height: 50px;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.section__task {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 5px;
+
+  box-sizing: border-box;
+
+  color: white;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  background-color: #abb81b;
+  border-radius: 50px;
+}
+
+@media (max-width: 1279px) {  
+  .section__container {
+    width: 425px;
+    height: 251px;
+    background-size: 110px 249px;
+    border-radius: 0 0 3% 3%;
+  }
+
+  .section__title {
+    margin-left: 99px;
+    margin-top: 15px;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .section__action {    
+    padding: 0;
+    padding-left: 46px;
+    max-width: 415px;
+    height: 130px;
+    
+    font-size: 55px;
+    line-height: 44px;
+
+    &:after {
+      right: 53px;
+    }
+  } 
+}
+
+@media (min-width: 767px) and (min-height: 1279px) {
+  .section__container {
+    min-height: 594px;
+    background-size: 260px 595px;
+  }
+
+  .section__title {
+    margin-left: 194px;
+    margin-top: 190px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 157px;
+  }  
+}
+
+@media (max-width: 479px) {
+  .section__container {
+    width: 310px;
+    height: 210px;
+    background-size: 90px 210px;
+  }
+
+  .section__title {
+    margin-left: 75px;
+    margin-top: 28px;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 35px;
+  }
+
+  .section__action {    
+    padding: 0;
+    padding-left: 45px;
+    width: 300px;
+    height: 78px;
+    
+    font-size: 36px;
+    line-height: 44px;
+
+    &:after {
+      background-size: 70% 70%;
+      right: 30px;
+      bottom: 0;
+    }
+  } 
+}

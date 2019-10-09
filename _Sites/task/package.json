@@ -1,0 +1,18 @@
+{
+  "name": "gulp-web",
+  "version": "1.0.0",
+  "description": "project using gulp4",
+  "author": "Albert",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-css-comments": "^2.0.0"
+  }
+}
